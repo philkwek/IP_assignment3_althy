@@ -1,0 +1,55 @@
+/* index.html style */
+
+#welcome_title_login{
+    position: relative;
+    top: 30px;
+    left:20px;
+    text-align: left;
+    white-space: normal;
+    font-size: 69px;
+    font-family: 'Patrick Hand SC', cursive;
+    margin:1rem;
+}
+
+#apple_icon{
+    transform: rotate(20deg);
+    position:relative;
+    left:167px;
+    top:170px;
+    width:154px;
+}
+
+.login_button{
+    position:relative;
+    align-items:center;
+    top:230px;
+}
+
+#create_account{
+    width:14rem;
+    height:3rem;
+    background-color: white;
+    border-radius: 40px;
+    color: black;
+    border-color: black;
+}
+
+#create_account:hover{
+    background-color: black;
+    color: rgb(241, 241, 241);
+    border-style: none;
+}
+
+#login_account{
+    width:14rem;
+    height:3rem;
+    background-color: black;
+    border-radius: 40px;
+    color: rgb(241, 241, 241);
+    border-color: black;
+}
+
+#login_account:hover{
+    background-color: white;
+    color: black;
+}
