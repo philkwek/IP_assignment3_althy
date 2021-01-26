@@ -2,7 +2,7 @@
 
 ## Al-thy! [(Click me to open Webapp)](https://philkwek.github.io/IP_assignment3_althy/)
 
-Al-thy is an app created for our Integrated Project, a project that consists of deliverables from all modules that we are currently taking in our Semester 1.2. Modules include Interactive Development, Gamefication Concepts, Applied Design, 3D Fundamentals and lastly, Production Management. This project on GitHub specifically is a deliverable part for our Interactive Development Module.
+Al-thy is an app created for our Integrated Project, a project that consists of deliverables from all modules that we are currently taking in our Semester 1.2. Modules include Interactive Development, Gamification Concepts, Applied Design, 3D Fundamentals and lastly, Production Management. This project on GitHub specifically is a deliverable part for our Interactive Development Module.
 
 For our project, our aim is to create an app to better encourage users to build healthy eating habits through gamification reward loops and the ability to locate new eating places. This will be achieved through the usage of different APIs such as Google Firebase for data storage on a server, Google Maps API for location finding and lastly a QR Code Scanner API to scan QR codes to earn Health Points.
 
