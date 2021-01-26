@@ -1,6 +1,6 @@
 # IP Assignment 3
 
-## Al-thy!
+## Al-thy! [(Click me to open Webapp)](https://philkwek.github.io/IP_assignment3_althy/)
 
 Al-thy is an app created for our Integrated Project, a project that consists of deliverables from all modules that we are currently taking in our Semester 1.2. Modules include Interactive Development, Gamefication Concepts, Applied Design, 3D Fundamentals and lastly, Production Management. This project on GitHub specifically is a deliverable part for our Interactive Development Module.
 
