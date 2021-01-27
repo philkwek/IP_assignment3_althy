@@ -1,5 +1,9 @@
 /* index.html style */
 
+body{
+    background-color:#F7F0E9;
+}
+
 #welcome_title_login{
     position: relative;
     top: 5px;
@@ -8,6 +12,7 @@
     white-space: normal;
     font-size: 69px;
     font-family: 'Patrick Hand SC', cursive;
+    color: #748394;
     margin:1rem;
 }
 
@@ -28,34 +33,86 @@
 #create_account{
     width:14rem;
     height:3rem;
-    background-color: white;
+    background: transparent;
     border-radius: 40px;
     color: black;
-    border-color: black;
+    border-color: #748394;
+    color: #748394;
 }
 
 #create_account:hover{
-    background-color: black;
+    background-color: #748394;
     color: rgb(241, 241, 241);
     border-style: none;
+    color: #F7F0E9;
 }
 
 #login_account{
     width:14rem;
     height:3rem;
-    background-color: black;
+    background-color: #748394;
     border-radius: 40px;
     color: rgb(241, 241, 241);
-    border-color: black;
+    border-color: #748394;
+    color: #F7F0E9;
 }
 
 #login_account:hover{
-    background-color: white;
-    color: black;
+    background-color: #F7F0E9;
+    color: #748394;
 }
 
 /* Stylesheet section for create_account*/
 
-.create_account.test_header{
-    font-style:italic;
+
+
+#create_account_click_continue{
+    position: relative;
+    top: 350px;
+    width:14rem;
+    height:3rem;
+    background-color: #F7F0E9;
+    border-radius: 40px;
+    color: #748394;
+    border-color: #748394;
 }
+
+#create_account_click_continue:hover{
+    position: relative;
+    top: 350px;
+    width:14rem;
+    height:3rem;
+    background-color: #748394;
+    border-radius: 40px;
+    color: #F7F0E9;
+    border-color: #748394;
+}
+
+
+
+.create_account.login_details {
+    position: relative;
+    margin: 1rem;
+    top:60px;
+    left: 20px;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 37px;
+    color: #748394;
+}
+
+.create_account.login_details input[type=text] {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #748394;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+    color:#748394;
+    
+}
+
