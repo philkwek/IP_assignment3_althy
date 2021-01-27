@@ -30,8 +30,7 @@ function gotData(data){
                 break
             } else {
                 login_check = 'False'
-                console.log('Username Checks, Password Failed!')
-                break
+                continue
             }
         } else{
             login_check = 'none'
