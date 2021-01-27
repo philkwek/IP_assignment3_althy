@@ -2,7 +2,7 @@
 
 #welcome_title_login{
     position: relative;
-    top: 30px;
+    top: 10px;
     left:20px;
     text-align: left;
     white-space: normal;
@@ -15,14 +15,14 @@
     transform: rotate(20deg);
     position:relative;
     left:167px;
-    top:170px;
+    top:100px;
     width:154px;
 }
 
 .login_button{
     position:relative;
     align-items:center;
-    top:230px;
+    top:200px;
 }
 
 #create_account{
@@ -52,4 +52,10 @@
 #login_account:hover{
     background-color: white;
     color: black;
+}
+
+/* Stylesheet section for create_account*/
+
+.create_account.test_header{
+    font-style:italic;
 }
