@@ -16,6 +16,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Patrick+Hand+SC&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../style.css"> 
         <!-- Change directories as needed, ../ is used for files one level up-->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+        <!-- include firebase firestore -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+        <!-- include firebase database -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
     </head>
 
     <header>
@@ -25,7 +38,9 @@
     
     <body>
 
-        <form class = "create_account login_details">
+        <img class = "create_account back_arrow" id="create_account_back_arrow" src = "../assets/images/back-arrow.svg" alt="HTML5 icon">
+
+        <form class = "create_account login_details" id="create_account_form">
 
             <label for = 'username'>Username</label></br>
             <input type = "text" id="username"></br>

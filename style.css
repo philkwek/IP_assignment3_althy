@@ -66,11 +66,17 @@ body{
 
 /* Stylesheet section for create_account*/
 
+.create_account.back_arrow{
+    width:35px;
+    position: relative;
+    top: 30px;
+    left: 35px;
+}
 
 
 #create_account_click_continue{
     position: relative;
-    top: 120px;
+    top: 70px;
     width:14rem;
     height:3rem;
     background-color: #F7F0E9;
@@ -93,7 +99,7 @@ body{
 .create_account.login_details {
     position: relative;
     margin: 1rem;
-    top:20px;
+    top:30px;
     left: 20px;
     font-family: 'Patrick Hand SC', cursive;
     font-size: 37px;
@@ -120,7 +126,7 @@ body{
 .create_account.pear{
     width:146px;
     position: relative;
-    top: 60px;
+    top: 30px;
     left: 45px;
     transform: rotate(-10deg)
 }
@@ -128,11 +134,17 @@ body{
 
 /* Stylesheet section for login*/
 
+.login.back_arrow{
+    width:35px;
+    position: relative;
+    top: 30px;
+    left: 35px;
+}
 
 
 #login_account_click_continue{
     position: relative;
-    top: 150px;
+    top: 80px;
     width:14rem;
     height:3rem;
     background-color: #F7F0E9;
@@ -157,7 +169,7 @@ body{
 .login_account.login_details {
     position: relative;
     margin: 1rem;
-    top:20px;
+    top:30px;
     left: 20px;
     font-family: 'Patrick Hand SC', cursive;
     font-size: 37px;
@@ -183,7 +195,7 @@ body{
 .login.advocado{
     width:160px;
     position: relative;
-    top: 90px;
+    top: 30px;
     left: 180px;
     transform: rotate(15deg);
 }
