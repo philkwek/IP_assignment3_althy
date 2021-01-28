@@ -1,6 +1,7 @@
 function onScanSuccess(qrCodeMessage) {
-    alert(qrCodeMessage)
     html5QrcodeScanner.clear();
+    window.location = qrCodeMessage;
+    
 	// handle on success condition with the decoded message
 }
 
