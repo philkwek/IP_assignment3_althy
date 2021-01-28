@@ -23,6 +23,12 @@ function gotData(data){
         var username = retrieved_details[k].username
         console.log(username, password)
 
+        if (entered_username.length == 0 || entered_password.length == 0){
+            console.log('User did not input any information')
+            login_check = 'null'
+            break
+        }
+
         if (entered_username == username){
             if(entered_password == password){
                 login_check = 'True'
@@ -45,9 +51,11 @@ function gotData(data){
     } else if (login_check == 'False'){
         console.log("Password is wrong!")
         alert('Password is wrong!')
-    } else {
+    } else if (login_check == 'none'){
         console.log("Account doesn't exist!")
         alert('Account does not exist.')
+    } else {
+        alert('Please enter account details.')
     }
 
 }
@@ -63,6 +71,7 @@ console.log(firebase)
 $('#login_account_click_continue').click(function(){
     retrieveDetails();
     $('#login_account_form')[0].reset();
+    $('#login_loading_animation').show();
 })
 
 $('#login_back_arrow').click(function(){
