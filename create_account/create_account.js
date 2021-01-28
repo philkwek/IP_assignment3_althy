@@ -16,12 +16,27 @@ function uploadAccountData(){ //this function uploads data to firebase
     ref.push(data);
 }
 
+function createNewProfile(){
+    var database = firebase.database();
+
+    var data = {
+        'username': username,
+        'level': 0,
+        'HP': 0,
+    };
+
+    var ref = database.ref('profiles')
+
+    ref.push(data);
+}
+
 
 $('#create_account_click_continue').click(function(){
     getNewAccount_details();
     console.log(username);
     console.log(password);
     uploadAccountData();
+    createNewProfile();
     $('#create_account_form')[0].reset();
     alert("Account created!")
 })

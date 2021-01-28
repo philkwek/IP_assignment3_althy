@@ -3,15 +3,58 @@ function getAccount_details(){
     entered_password = document.getElementById("password").value
 };
 
-function retrieveDetails(){
+function retrieveProfiles(){
+    
+    var database = firebase.database();
+    var ref = database.ref('profiles');
+    ref.on('value', gotProfileData)
+}
+
+function gotProfileData(data){
+    //console.log(data.val())
+    var retrieved_profiles = data.val();
+    var keys = Object.keys(retrieved_profiles);
+    console.log(keys);
+
+    for (var i = 0; i < keys.length; i++) {
+        var k =keys[i];
+
+        profile_username = retrieved_profiles[k].username;
+        profile_level = retrieved_profiles[k].level;
+        profile_hp = retrieved_profiles[k].HP;
+
+        console.log(profile_username,profile_level,profile_hp)
+
+        if (profile_username == entered_username){
+            console.log('Found profile')
+
+            current_profile = {
+                'username': profile_username,
+                'level': profile_level,
+                'HP':profile_hp,
+            }
+
+            localStorage.setItem("profile", JSON.stringify(current_profile));
+
+            break
+        }
+    }
+
+
+}
+
+
+
+
+
+function retrieveDetails(){ //this code retrieves info to check account details
     getAccount_details();
     var database = firebase.database();
     var ref = database.ref('account_details')
-
     ref.on('value', gotData, errData)
 }
 
-function gotData(data){
+function gotData(data){ 
     //console.log(data.val())
     var retrieved_details = data.val();
     var keys = Object.keys(retrieved_details);
@@ -19,9 +62,9 @@ function gotData(data){
 
     for (var i = 0; i < keys.length; i++) { //this retrieves the usernames and passwords one by one
         var k = keys[i];
-        var password = retrieved_details[k].password
-        var username = retrieved_details[k].username
-        console.log(username, password)
+        var password = retrieved_details[k].password;
+        got_username = retrieved_details[k].username;
+        console.log(got_username, password)
 
         if (entered_username.length == 0 || entered_password.length == 0){
             console.log('User did not input any information')
@@ -29,7 +72,7 @@ function gotData(data){
             break
         }
 
-        if (entered_username == username){
+        if (entered_username == got_username){
             if(entered_password == password){
                 login_check = 'True'
                 console.log('Username and Password Checks out!')
@@ -57,6 +100,8 @@ function gotData(data){
         alert('Please enter account details.')
     }
 
+    
+
 }
 
 function errData(err){
@@ -74,15 +119,22 @@ function openApp(){
 
 console.log(firebase)
 
+localStorage.removeItem('profile') // allows users to relog in if they use the back button
+
 $('#login_account_click_continue').click(function(){
+    
     login_check = '';
     retrieveDetails();
+
+    
 
     setTimeout(function(){
         $('#login_account_form')[0].reset();
 
         if (login_check == 'True'){
             $('#login_loading_animation').show();
+            retrieveProfiles();
+
             openApp();
         } else {
             console.log(login_check)
