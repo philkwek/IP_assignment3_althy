@@ -44,8 +44,16 @@ This app will be split into 5 main sections with all sections having a common he
 ## Technologies and APIs Used
 
 ### Technologies
+- HTML, CSS & Javascript
+- JQuery
+- Bootstrap 4
+- Visual Code Studio
+- GitHub & Github Pages (website hosting)
 
 ### APIs
+- Google Firebase (serverside storage)
+- Google Maps & Locations API
+- QR Code API
 
 ## Testing
 
