@@ -46,7 +46,6 @@ function gotData(data){
 
     if (login_check == 'True'){
         console.log("You're logged in!")
-        alert('Logged in!')
 
     } else if (login_check == 'False'){
         console.log("Password is wrong!")
@@ -65,13 +64,31 @@ function errData(err){
     console.log(err)
 }
 
+function openApp(){
+    setTimeout(function(){
+        window.location = "../main_menu_scan/main_menu_scan.html"
+    }, 3000)
+    console.log('loading...')
+}
+
 
 console.log(firebase)
 
 $('#login_account_click_continue').click(function(){
+    login_check = '';
     retrieveDetails();
-    $('#login_account_form')[0].reset();
-    $('#login_loading_animation').show();
+
+    setTimeout(function(){
+        $('#login_account_form')[0].reset();
+
+        if (login_check == 'True'){
+            $('#login_loading_animation').show();
+            openApp();
+        } else {
+            console.log(login_check)
+        }
+    }, 3000)
+    
 })
 
 $('#login_back_arrow').click(function(){
