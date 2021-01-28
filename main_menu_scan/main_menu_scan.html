@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="../style.css">
         <!-- Adjust directories of style sheet as needed-->
 
+        <!-- Script link for qr code reader -->
+        <script src="../scripts/html5-qrcode.min.js"></script>
+
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 
@@ -73,12 +76,19 @@
         <div id = "body_scan" class="container">
 
             <div class = 'row'>
-                <div class = 'col'>
+
+                <div class = 'col-sm-12'>
                     <h2 class = "body_function_header">Scan</h2>
                 </div>
-                <div class = 'col'>
-                    <div id = "QR_code_scanner"></div>
+
+                <div class = 'col-sm-12'>
+                    <div id = "qr-reader"></div>
                 </div>
+
+                <div class = 'col-sm-12'>
+                    <div id = 'qr-reader-results'></div>
+                </div>
+
             </div>
 
         </div>
@@ -94,7 +104,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
         <script src="../script.js"></script>
+        <script src="main_menu_scan.js"></script>
     
     </body>
 
