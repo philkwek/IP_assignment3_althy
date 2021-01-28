@@ -87,7 +87,7 @@ $('#login_account_click_continue').click(function(){
         } else {
             console.log(login_check)
         }
-    }, 3000)
+    }, 1000)
     
 })
 
