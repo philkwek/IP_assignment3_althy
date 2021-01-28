@@ -217,3 +217,98 @@ body{
     transform: rotate(15deg);
 }
 
+/* common header css */
+
+.header_level{
+    text-align: left;
+    font-family: 'Patrick Hand', cursive;
+    margin: 1rem;
+    font-size: 40px;
+    color: #354B64;
+}
+
+.header_username{
+    text-align: right;
+    font-family: 'Patrick Hand', cursive;
+    margin: 1rem;
+    font-size: 40px;
+    color: #354B64;
+}
+
+.header_points{
+    margin-right: 1rem;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: #8EB8CE;
+    text-align: center;
+    border-style: solid;
+    border-radius: 40px;
+    display: block;
+}
+
+#navigation_bar{
+   margin: 10px;
+   margin-top: 20px;
+}
+
+#navBar_1{
+    border-style: solid;
+    border-radius: 40px;
+    border-color:#748394;
+    background-color: #748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_2{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_3{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_4{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_5{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+/* Scan page css */
+
+.body_function_header{
+    margin: 1rem;
+    font-size: 50px;
+    color: #354B64;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#QR_code_scanner{
+    margin: 1rem;
+}
