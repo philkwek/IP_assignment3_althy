@@ -136,21 +136,19 @@ body{
 
 #login_background{
     z-index: -1;
-    width: 1000px;
-    height: 1000px;
     position:absolute;
     top: -500px;
-    right: 5px;
+    left: -60px;
 }
 
 #login_loading_animation{
     position: absolute;
-    margin: auto;
     top: 210px;
-    left: 40px;
     z-index: 1;
     display:none;
 }
+
+
 
 .login.back_arrow{
     z-index: 2;
