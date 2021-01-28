@@ -1,4 +1,5 @@
 function setup(){
+
     var firebaseConfig = {
         apiKey: "AIzaSyCQeeciUXdCf4XqbeZT1WBhXfVLxJxWXok",
         authDomain: "ip-asg3-althy.firebaseapp.com",
@@ -21,11 +22,4 @@ setup();
 
 
 
-$('#create_account').click(function(){
-    window.location = 'create_account/create_account.html'
-})
-
-$('#login_account').click(function(){
-    window.location = 'login_page/login.html'
-})
 
