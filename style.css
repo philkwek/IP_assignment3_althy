@@ -182,9 +182,7 @@ body{
 
 .login_account.login_details {
     position: relative;
-    margin: 1rem;
     top:30px;
-    left: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 37px;
     color: #748394;
@@ -210,7 +208,7 @@ body{
     width:160px;
     position: relative;
     top: 30px;
-    left: 180px;
+    right:40px;
     transform: rotate(15deg);
 }
 

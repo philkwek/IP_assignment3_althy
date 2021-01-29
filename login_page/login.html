@@ -40,13 +40,31 @@
 
         <img class = "login back_arrow" id="login_back_arrow" src = "../assets/images/back-arrow.svg" alt="HTML5 icon">
 
-        <form class = "login_account login_details" id="login_account_form">
+        <form class = "login_account login_details container mt-4" id="login_account_form" >
 
-            <label for = 'username'>Username</label></br>
-            <input type = "text" id="username"></br>
+            <div class = 'row' align = center>
 
-            <label for = 'password'>Password</label></br>
-            <input type = 'text' id = 'password'></br>
+                <div class = 'col-sm-12'>
+
+                    <div class = 'col-sm-12' align=left>
+                        <label for = 'username'>Username</label></br>
+                    </div>
+
+                    <input type = "text" id="username"></br>
+
+                </div>
+
+                <div class = 'col-sm-12'>
+
+                    <div class = 'col-sm-12' align=left>
+                        <label for = 'password'>Password</label></br>
+                    </div>
+
+                    <input type = 'text' id = 'password'></br>
+
+                </div>
+
+            </div>
 
         </form>
 
@@ -58,7 +76,13 @@
             <img id = "login_background" src = "../assets/images/coloured_bg.png" alt="HTML5 icon">
         </div>
 
-        <img class = "login advocado" id="advocado_icon" src = "../assets/images/advocado.png" alt="HTML5 icon">
+
+        <div class = 'row' align = center>
+            <div class = 'col-sm-12' align=right>
+                <img class = "login advocado" id="advocado_icon" src = "../assets/images/advocado.png" alt="HTML5 icon">
+            </div>
+        </div>
+        
 
         <div align=center>
             <button id = "login_account_click_continue">Login</button>
