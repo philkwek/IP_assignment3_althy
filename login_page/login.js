@@ -125,21 +125,23 @@ $('#login_account_click_continue').click(function(){
     
     login_check = '';
     retrieveDetails();
+    $('#login_loading_animation').show();
 
     
 
     setTimeout(function(){
         $('#login_account_form')[0].reset();
+        
 
         if (login_check == 'True'){
-            $('#login_loading_animation').show();
+    
             retrieveProfiles();
-
             openApp();
+
         } else {
             console.log(login_check)
         }
-    }, 1000)
+    }, 3000)
     
 })
 
