@@ -40,19 +40,35 @@
 
         <img class = "create_account back_arrow" id="create_account_back_arrow" src = "../assets/images/back-arrow.svg" alt="HTML5 icon">
 
-        <form class = "create_account login_details" id="create_account_form">
+        <form class = "create_account login_details container mt-4" id="create_account_form">
 
-            <label for = 'username'>Username</label></br>
-            <input type = "text" id="username"></br>
+            <div class = 'row' align = center>
 
-            <label for = 'password'>Password</label></br>
-            <input type = 'text' id = 'password'></br>
+                <div class = 'col-sm-12'>
+                    <div class = 'col' align=left>
+                        <label for = 'username' class = ''>Username</label></br>
+                    </div>
+                    <input type = "text" id="username"></br>
+                </div>
+
+                <div class = 'col-sm-12'>
+                    <div class = 'col' align=left>
+                        <label for = 'password'>Password</label></br>
+                    </div>
+                    <input type = 'text' id = 'password'></br>
+                </div>
+
+                <div class = 'col-sm-12' align=left>
+                    <img class = "create_account pear" id="pear_icon" src = "../assets/images/pear.png" alt="HTML5 icon">
+                </div>
+
+            </div>
 
         </form>
 
-        <img class = "create_account pear" id="pear_icon" src = "../assets/images/pear.png" alt="HTML5 icon">
+        
 
-        <div align=center>
+        <div class = 'mt-4' align=center>
             <button id = "create_account_click_continue">Continue</button>
         </div>
 

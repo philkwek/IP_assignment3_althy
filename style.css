@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* index.html style */
 
@@ -8,12 +8,11 @@ body{
 
 #welcome_title_login{
     position: relative;
-    top: 5px;
-    left:20px;
-    text-align: left;
+    top: 10px;
+    text-align:left;
     white-space: normal;
-    font-size: 69px;
-    font-family: 'Patrick Hand SC', cursive;
+    font-size: 59px;
+    font-family: 'Roboto', sans-serif;
     color: #748394;
     margin:1rem;
 }
@@ -98,10 +97,8 @@ body{
 
 .create_account.login_details {
     position: relative;
-    margin: 1rem;
     top:30px;
-    left: 20px;
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 37px;
     color: #748394;
 }
@@ -117,7 +114,7 @@ body{
     border-bottom: 2px solid #748394;
     background: transparent;
     font-size: 20px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
     color:#748394;
     
 }
@@ -127,7 +124,7 @@ body{
     width:146px;
     position: relative;
     top: 30px;
-    left: 45px;
+    left: 25px;
     transform: rotate(-10deg)
 }
 
@@ -188,7 +185,7 @@ body{
     margin: 1rem;
     top:30px;
     left: 20px;
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 37px;
     color: #748394;
 }
@@ -204,7 +201,7 @@ body{
     border-bottom: 2px solid #748394;
     background: transparent;
     font-size: 20px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
     color:#748394;
     
 }
@@ -221,7 +218,7 @@ body{
 
 .header_level{
     text-align: left;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
     margin: 1rem;
     font-size: 40px;
     color: #354B64;
@@ -229,7 +226,7 @@ body{
 
 .header_username{
     text-align: right;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
     margin: 1rem;
     font-size: 40px;
     color: #354B64;
@@ -237,7 +234,7 @@ body{
 
 .header_points{
     margin-right: 1rem;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: #8EB8CE;
     text-align: center;
@@ -307,7 +304,7 @@ body{
     margin-bottom: 0.6rem;
     font-size: 50px;
     color: #354B64;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 #qr-reader{
