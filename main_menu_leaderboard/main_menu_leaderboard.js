@@ -1,15 +1,3 @@
-function onScanSuccess(qrCodeMessage) {
-    html5QrcodeScanner.clear();
-    window.location = qrCodeMessage;
-    
-	// handle on success condition with the decoded message
-}
-
-var html5QrcodeScanner = new Html5QrcodeScanner(
-	"qr-reader", { fps: 10, qrbox: 250 });
-html5QrcodeScanner.render(onScanSuccess);
-
-
 function setUp(){
     
     profile_data = JSON.parse(localStorage.getItem('profile')); 
@@ -29,8 +17,6 @@ function setUp(){
 
 setUp()
 
-
-$('#navBar_1_2').click(function(){
-    window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
+$('#navBar_2_1').click(function(){
+    window.location  = '../main_menu_scan/main_menu_scan.html'
 })
-
