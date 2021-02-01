@@ -150,3 +150,7 @@ $('#navBar_2_1').click(function(){
     window.location  = '../main_menu_scan/main_menu_scan.html'
 });
 
+$('#navBar_2_3').click(function(){
+    window.location  = '../main_menu_nearby/main_menu_nearby.html'
+});
+

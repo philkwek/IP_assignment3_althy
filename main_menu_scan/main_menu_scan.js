@@ -34,3 +34,8 @@ $('#navBar_1_2').click(function(){
     window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
 })
 
+$('#navBar_1_3').click(function(){
+    window.location = '../main_menu_nearby/main_menu_nearby.html'
+}
+)
+
