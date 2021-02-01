@@ -366,26 +366,32 @@ body{
 
 
 
-#leaderboard_1{
+.leaderboard_1{
     font-family: 'Roboto', sans-serif;
-
+    
 }
 
-#leaderboard_2{
+.leaderboard_2{
     
     font-family:'Roboto', sans-serif;
     position: relative;
     top: 60px;
     left: 10px;
+    
+
 }
 
-#leaderboard_3{
+.leaderboard_3{
     
     font-family:'Roboto', sans-serif;
     position: relative;
     top: 120px;
     right:20px;
+    
+
 }
+
+
 
 #body_leaderboard_extras{
     position:relative;

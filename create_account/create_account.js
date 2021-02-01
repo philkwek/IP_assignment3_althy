@@ -47,3 +47,5 @@ $('#create_account_back_arrow').click(function(){
     window.location = '../index.html'
 })
 
+
+
