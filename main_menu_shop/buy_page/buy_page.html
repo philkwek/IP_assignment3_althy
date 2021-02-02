@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style.css">
+        <!-- Adjust directories of style sheet as needed-->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+        <!-- include firebase firestore -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+        <!-- include firebase database -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    </head>
+
+    <header>
+
+        <div class = "header_information container mt-2">
+
+            <div class = "row">
+                <div class = "col">
+                    <h3 class = "header_level" >Level <span id = "header_level" class="header_level_number">0</span></h3>
+                </div>
+                <div class = "col">
+                    <h3 class = "header_username" id = "header_username"></h3>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col"></div>
+                <div class = "col"></div>
+                <div class = "col-5">
+                    <h4 class = "header_points"><span class="header_points_number" id = "header_points_number">0</span> AP</h4>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    
+    <body>
+
+        <div class = "container">
+            <div class = "header_navigation_bar row" id = "navigation_bar">
+
+                <div class = "col" id = "navBar_4_1"></div>
+                <div class = "col" id = "navBar_4_2"></div>
+                <div class = "col" id = "navBar_4_3"></div>
+                <div class = "col" id = "navBar_4_4"></div>
+                <div class = "col" id = "navBar_4_5"></div>
+
+            </div>
+        </div>
+
+        <div class = 'container'>
+
+            <div class = 'row'>
+
+                <div class = 'col-sm-12'>
+                    <h2 class = "body_function_header">Shop</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = 'container' align=center>
+
+            <div class = 'row'>
+
+              <div class = 'col-sm-12 mt-2'>
+                  <img class = 'purchase_image' id = 'purchase_fitness' src='../../assets/images/fitness_watch.png'>
+                  <img class = 'purchase_image' id = 'purchase_mug' src='../../assets/images/sloth_mug.jpg'>
+                  <img class = 'purchase_image' id = 'purchase_bottle' src='../../assets/images/nalgene_bottle.jpg'>
+                  <img class = 'purchase_image' id = 'purchase_rope' src='../../assets/images/skipping_rope.jpg'>
+              </div>
+
+              <div class = 'col-sm-12' align=left>
+                <h3 id='purchase_name'>Sloth Mug</h3>
+                <h4 id='price'><span id = 'purchase_price'>5000</span> AP</h4>
+              </div>
+
+              <div class = 'col-sm-12' align=left>
+                  <h4 class = 'purchase_balance' >Balance After Purchase:<br><span class = 'purchase_remaining' id='purchase_remaining'>100</span>
+                    <span class = 'purchase_remaining'>AP</span></h4>
+              </div>
+
+              <div class = 'col-sm-12' align = right>
+                  <img id = 'purchase_next' src = '../../assets/images/next.svg'>
+              </div>
+
+            </div>
+
+
+        </div>
+
+    
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <script src="../../script.js"></script>
+        <script src='buy_page.js'></script>
+    
+    </body>
+
+  
+</html>

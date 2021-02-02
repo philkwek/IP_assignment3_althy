@@ -675,3 +675,70 @@ body{
     position: relative;
     bottom: 49px;
 }
+
+/* purchase page css*/
+
+.purchase_image{
+    width: 350px;
+    margin: auto;
+    display: none;
+}
+
+#purchase_name{
+    margin: 15px;
+    margin-bottom: 0px;
+    color: #354B64;
+    font-size: 40px;
+}
+
+#price{
+    margin: 15px;
+    margin-top:5px;
+    color: #748394;
+    font-size: 25px;
+}
+
+.purchase_balance{
+    margin-top: 0px;
+    margin: 15px;
+    font-size: 25px;
+    color: #354B64;
+}
+
+.purchase_remaining{
+    font-size: 25px;
+    color: #748394;
+}
+
+#purchase_remaining{
+    color: #748394;
+    font-size: 25px;
+}
+
+#purchase_next{
+    margin: 20px;
+}
+
+/* Checkout confirm css*/
+
+.checkout_form input[type=text] {
+    width: 100%;
+    padding: 6px 20px;
+    margin: 3px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #748394;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color:#748394;
+    
+}
+
+.checkout_form{
+    margin: 1rem;
+    font-size: 20px;
+    color: #354B64;
+}

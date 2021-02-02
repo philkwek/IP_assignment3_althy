@@ -6,7 +6,7 @@ function getAccount_details(){
 function retrieveProfiles(){
     
     var database = firebase.database();
-    var ref = database.ref('profiles');
+    var ref = database.ref('profiles'); //ref contains profile data of all stored users
     ref.on('value', gotProfileData)
 }
 
@@ -16,7 +16,7 @@ function gotProfileData(data){
     var keys = Object.keys(retrieved_profiles);
     console.log(keys);
 
-    for (var i = 0; i < keys.length; i++) {
+    for (var i = 0; i < keys.length; i++) { //this functions checks if profile data from list matches entered username & password
         var k =keys[i];
 
         profile_username = retrieved_profiles[k].username;
@@ -25,7 +25,7 @@ function gotProfileData(data){
 
         console.log(profile_username,profile_level,profile_hp)
 
-        if (profile_username == entered_username){
+        if (profile_username == entered_username){ //if matches, it stores corresponding profile data for current session
             console.log('Found profile')
 
             current_profile = {
