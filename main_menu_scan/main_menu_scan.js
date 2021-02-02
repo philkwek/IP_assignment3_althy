@@ -36,6 +36,9 @@ $('#navBar_1_2').click(function(){
 
 $('#navBar_1_3').click(function(){
     window.location = '../main_menu_nearby/main_menu_nearby.html'
-}
-)
+})
+
+$('#navBar_1_4').click(function(){
+    window.location = '../main_menu_shop/main_menu_shop.html'
+})
 
