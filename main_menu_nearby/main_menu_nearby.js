@@ -18,11 +18,17 @@ function setUp(){
 }
 
 let map;
+let service;
+let infowindow;
+
+  
 
 function initMap() { //function loads first map
+
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 1.3521, lng: 103.8198 },
       zoom: 9,
+      mapId: '2d38bb2c193966c7',
     });
 };
 
@@ -43,6 +49,7 @@ function showPosition(pos){ //this function recenters map on current location an
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: crd.latitude, lng: crd.longitude },
         zoom: 16,
+        mapId: '2d38bb2c193966c7',
       });
 
     new google.maps.Marker({
@@ -51,46 +58,17 @@ function showPosition(pos){ //this function recenters map on current location an
         title:'Test!'
     });
 
+
     $('#map').show();
     $('#nearby_loading').hide();
 }
 
+
+
 function error(err){
     console.warn(`ERROR(${err.code}): ${err.message}`);
 }
-
-// event listeners for filters
-checkbox_hawker = document.querySelector('#nearby_hawker');
-
-checkbox_hawker.addEventListener('change', function(){
-    if (this.checked) {
-        console.log('hawker checked')
-    } else {
-        console.log('hawker not checked')
-    }
-})
-
-checkbox_rest = document.querySelector('#nearby_restaurants');
-
-checkbox_rest.addEventListener('change', function(){
-    if (this.checked) {
-        console.log('restaurant checked')
-    } else {
-        console.log('restaurant not checked')
-    }
-})
-
-checkbox_rest = document.querySelector('#nearby_cafes');
-
-checkbox_rest.addEventListener('change', function(){
-    if (this.checked) {
-        console.log('cafes checked')
-    } else {
-        console.log('cafes not checked')
-    }
-})
-
-
+  
 
 
 getLocation();
