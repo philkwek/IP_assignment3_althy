@@ -636,6 +636,7 @@ body{
 .small_product_price{
     color: #748394;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .small_product_name.left{
@@ -651,6 +652,7 @@ body{
     margin-top: 5px;
     color: #748394;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .big_product_name.left{
