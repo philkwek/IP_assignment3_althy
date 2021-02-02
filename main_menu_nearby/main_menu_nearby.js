@@ -82,3 +82,7 @@ $('#navBar_3_2').click(function(){
     window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
 })
 
+$('#navBar_3_4').click(function(){
+    window.location = '../main_menu_shop/main_menu_shop.html'
+})
+
