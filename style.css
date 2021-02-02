@@ -496,11 +496,39 @@ body{
 }
 
 #map{
-    height: 500px;
+    height: 440px;
     width: 85%;
     text-align: center;
     margin: auto;
     padding: 10px;
+    margin-top: 5px;
+    display: none;
+}
+
+.nearby_filters{
+    margin:1rem;
+    margin-top: 0px;
+    color: #748394;
+    font-weight: 250;
+    font-size: 22px;
+}
+
+.nearby_filters_check{
+    margin:1rem;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: #748394;
+    font-weight: 250;
+    font-size: 17px;
+    text-align: right;
+}
+
+#nearby_loading{
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    left: 5.4%;
+    
 }
 
 
