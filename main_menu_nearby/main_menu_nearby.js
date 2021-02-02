@@ -19,15 +19,15 @@ function setUp(){
 
 let map;
 
-function initMap() {
+function initMap() { //function loads first map
     map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -34.397, lng: 150.644 },
-      zoom: 8,
+      center: { lat: 1.3521, lng: 103.8198 },
+      zoom: 9,
     });
 };
 
 
-function getLocation() {
+function getLocation() { //function runs to display current  location
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition, error);
     } else { 
@@ -35,10 +35,21 @@ function getLocation() {
     }
   }
 
-function showPosition(pos){
+function showPosition(pos){ //this function recenters map on current location and places a marker
     var crd = pos.coords;
     console.log('getting location')
     console.log(crd.latitude, crd.longitude)
+
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: crd.latitude, lng: crd.longitude },
+        zoom: 16,
+      });
+
+    new google.maps.Marker({
+        position: {lat: crd.latitude, lng: crd.longitude},
+        map,
+        title:'Test!'
+    });
 }
 
 function error(err){
