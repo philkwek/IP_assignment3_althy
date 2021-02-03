@@ -759,3 +759,7 @@ body{
     font-size: 20px;
     color: #354B64;
 }
+
+#confirming_loading{
+    display:none;
+}

@@ -38,6 +38,9 @@ function getConfirmPurchase_Details(){
 
 function checkout(){ //sends order to server and also updates HP value
 
+    $('#shop_elements').hide()
+    $('#confirming_loading').show()
+
     var entered_name = document.getElementById("full_name").value
     var entered_email = document.getElementById("email").value
     var entered_address = document.getElementById('address').value   
@@ -65,7 +68,11 @@ function checkout(){ //sends order to server and also updates HP value
         updateAP();
         setUp();
     }, 4000)
-    
+
+    setTimeout(function(){
+        alert('Your order has been sent! Please wait 7-10 Business Days for Delivery.')
+        window.location = '../../main_menu_shop/main_menu_shop.html'
+    },8000)
 
 
 }
