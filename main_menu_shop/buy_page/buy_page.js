@@ -33,6 +33,10 @@ $('#navBar_4_3').click(function(){
     window.location  = '../../main_menu_nearby/main_menu_nearby.html'
 });
 
+$('#navBar_4_4').click(function(){
+    window.location = '../../main_menu_shop/main_menu_shop.html'
+})
+
 function getPurchase_Details(){
 
     purchase_details = JSON.parse(localStorage.getItem('purchase_information'));

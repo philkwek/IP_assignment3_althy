@@ -152,3 +152,7 @@ $('#navBar_4_2').click(function(){
 $('#navBar_4_3').click(function(){
     window.location  = '../../main_menu_nearby/main_menu_nearby.html'
 });
+
+$('#navBar_4_4').click(function(){
+    window.location = '../../main_menu_shop/main_menu_shop.html'
+})
