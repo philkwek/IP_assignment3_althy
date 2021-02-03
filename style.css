@@ -233,7 +233,7 @@ body{
 .header_points{
     margin-right: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: #8EB8CE;
     text-align: center;
     border-style: solid;
@@ -679,9 +679,10 @@ body{
 /* purchase page css*/
 
 .purchase_image{
-    width: 350px;
+    width: 320px;
     margin: auto;
     display: none;
+    border-radius: 30px;
 }
 
 #purchase_name{
@@ -694,6 +695,7 @@ body{
 #price{
     margin: 15px;
     margin-top:5px;
+    margin-bottom: 0px;
     color: #748394;
     font-size: 25px;
 }
@@ -701,6 +703,7 @@ body{
 .purchase_balance{
     margin-top: 0px;
     margin: 15px;
+    margin-bottom: 0px;
     font-size: 25px;
     color: #354B64;
 }
@@ -716,7 +719,21 @@ body{
 }
 
 #purchase_next{
+    position: relative;
+    top: -65px;
+}
+
+#purchase_next_arrow{
+    margin-top: 0px;
     margin: 20px;
+}
+
+#purchase_next_text{
+    position: relative;
+    margin-right: 20px;
+    top: 73px;
+    right: 75px;
+    color: #748394;
 }
 
 /* Checkout confirm css*/
