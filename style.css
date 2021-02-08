@@ -242,7 +242,8 @@ body{
 }
 
 #navigation_bar{
-   margin: 10px;
+   margin: 1rem;
+   margin-bottom: 10px;
    margin-top: 20px;
 }
 
@@ -762,4 +763,106 @@ body{
 
 #confirming_loading{
     display:none;
+}
+
+/* Profile css */
+
+#profile_menu_header{
+    margin-left:1rem;
+    color: #748394;
+    font-weight: 400;
+}
+
+#navBar_5_1{
+    border-style: solid;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_5_2{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_5_3{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_5_4{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+}
+
+#navBar_5_5{
+    border-style: solid;
+    width: 40px;
+    height: 14px;
+    border-radius: 40px;
+    border-color:#748394;
+    padding: 3px;
+    margin: 5px;
+    background-color: #748394;
+}
+
+#stat_table_div{
+    margin: 1rem;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 3px solid #748394;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #748394;
+}
+
+#stat_table{
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#stat_table th, td{
+    padding: 10px;
+    margin: 3px;
+    
+}
+
+.border_left_table{
+    border-right: 3px solid #748394;
+}
+
+.table_data{
+    color:#354B64;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+#friends_list{
+    margin: 1rem;
+    margin-top: 10px;
+    
+}
+
+.friends_list_name{
+    color: #354B64;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 24px;
 }
