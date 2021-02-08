@@ -27,13 +27,55 @@ function enterStatData(){
 
 }
 
-function displayFriends(){
+
+function addFriend(){
+
+    var user_list = firebase.database().ref('friend_list')
+    user_list.on('value', gotData)
 
 }
 
-function addFriend(){
+function gotData(data){
+
     var friend_name = document.getElementById('friend_name').value;
     console.log(friend_name)
+    
+    if (friend_name == profile_data['username']) { //informs user if they are trying to add themselves
+        console.log('Cannot add yourself!');
+    }
+
+    var retrieved_details = data.val();
+    var keys = Object.keys(retrieved_details); //array with all possible usernames
+    console.log(keys);
+
+    for (var i = 0; i < keys.length; i++) {
+        var k = keys[i];
+        console.log(k)
+        console.log(keys.length)
+
+        if (k == friend_name){
+
+            console.log('friend found! adding friend...')
+
+            firebase.database().ref('friend_list/'+profile_data['username']).on('value',function(snapshot){
+                current_friend_list = snapshot.val().list;
+            })
+
+            console.log(current_friend_list)
+
+            current_friend_list.push(friend_name)
+
+            name_exists = true
+
+        } 
+    }
+
+    if (name_exists == true){
+        firebase.database().ref('friend_list/'+profile_data['username']).update({
+            'list': current_friend_list,
+        })
+    }
+
 }
 
 
@@ -70,6 +112,8 @@ $('#friend_add').click(function(){ //add friend toggle to show/hide search
 })
 
 $('#profile_add_friend').click(function(){
+    
     addFriend();
+    
 })
 

@@ -16,6 +16,18 @@ function uploadAccountData(){ //this function uploads data to firebase
     ref.push(data);
 }
 
+function createFriendList(){
+
+    var database = firebase.database();
+
+    database.ref('friend_list/'+username).set({
+        'username': username,
+        'list': [''],
+    })
+
+
+}
+
 function createNewProfile(){
     var database = firebase.database();
 
@@ -40,6 +52,7 @@ $('#create_account_click_continue').click(function(){
     console.log(password);
     uploadAccountData();
     createNewProfile();
+    createFriendList();
     $('#create_account_form')[0].reset();
     alert("Account created!")
 })
