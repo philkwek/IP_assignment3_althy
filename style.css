@@ -876,3 +876,48 @@ body{
     left: 35px;
     margin-bottom: 1.8rem;
 }
+
+.friend_search{
+    font-size: 24px;
+    color:#354B64;
+    display: none;
+    
+}
+
+.friend_search input[type=text]{
+    width: 87%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #748394;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color:#354B64;
+    
+}
+
+#profile_add_friend{
+    width:8rem;
+    height:2.5rem;
+    background-color: #F7F0E9;
+    border-radius: 40px;
+    color: #748394;
+    border-color: #748394;
+    font-size: 18px;
+}
+
+#profile_add_friend:hover{
+    width:8rem;
+    height:2.5rem;
+    background-color: #F7F0E9;
+    border-radius: 40px;
+    color: #F7F0E9;
+    border-color: #748394;
+    font-size: 18px;
+    background-color: #748394;
+}
+

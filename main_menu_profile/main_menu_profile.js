@@ -23,8 +23,17 @@ function enterStatData(){
 
     set_AP_earned.innerHTML = profile_data['total_HP_earned']
     set_codes_scanned.innerHTML = profile_data['QR_codes_scanned']
-    
 
+
+}
+
+function displayFriends(){
+
+}
+
+function addFriend(){
+    var friend_name = document.getElementById('friend_name').value;
+    console.log(friend_name)
 }
 
 
@@ -48,5 +57,20 @@ $('#navBar_5_1').click(function(){
     window.location = '../main_menu_scan/main_menu_scan.html'
 })
 
+$('#friend_add').click(function(){ //add friend toggle to show/hide search
 
+    var x = document.getElementById('friend_search')
+
+    if (window.getComputedStyle(x).display ==='none'){
+        $('#friend_search').show();
+    } else {
+        $('#friend_search').hide();
+    }
+    
+
+})
+
+$('#profile_add_friend').click(function(){
+    addFriend();
+})
 
