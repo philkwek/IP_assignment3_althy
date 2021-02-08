@@ -139,12 +139,10 @@ body{
 }
 
 #login_loading_animation{
-    position: absolute;
     top: 210px;
     z-index: 1;
     display:none;
 }
-
 
 
 .login.back_arrow{
@@ -165,6 +163,7 @@ body{
     border-radius: 40px;
     color: #748394;
     border-color: #748394;
+    font-size: 20px;
 }
 
 
@@ -966,8 +965,5 @@ body{
 
 #profile_loading{
     margin: auto;
-    position: absolute;
-    text-align: center;
-    left: 10.4%;
     top: 45%;
 }

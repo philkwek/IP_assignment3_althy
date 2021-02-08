@@ -129,15 +129,16 @@ localStorage.removeItem('profile') // allows users to relog in if they use the b
 
 $('#login_account_click_continue').click(function(){
     
+    console.log('clicked')
     login_check = '';
     retrieveDetails();
+
     $('#login_loading_animation').show();
+    $('#login_account_form').hide();
+    $('#login_account_click_continue').hide();
 
     
-
-    setTimeout(function(){
-        $('#login_account_form')[0].reset();
-        
+    setTimeout(function(){ 
 
         if (login_check == 'True'){
     
