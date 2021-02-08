@@ -67,7 +67,6 @@ $('#friend_add').click(function(){ //add friend toggle to show/hide search
         $('#friend_search').hide();
     }
     
-
 })
 
 $('#profile_add_friend').click(function(){
