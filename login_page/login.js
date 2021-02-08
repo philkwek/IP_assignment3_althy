@@ -22,7 +22,9 @@ function gotProfileData(data){
         profile_username = retrieved_profiles[k].username;
         profile_level = retrieved_profiles[k].level;
         profile_hp = retrieved_profiles[k].HP;
-        profile_level_hp = retrieveved_profiles[k].level_hp;
+        profile_level_hp = retrieved_profiles[k].level_hp;
+        profile_total_HP = retrieved_profiles[k].total_HP_earned;
+        profile_QR_scanned = retrieved_profiles[k].QR_codes_scanned;
 
         console.log(profile_username,profile_level,profile_hp)
 
@@ -34,6 +36,8 @@ function gotProfileData(data){
                 'level': profile_level,
                 'HP':profile_hp,
                 'level_HP': profile_level_hp,
+                'total_HP_earned': profile_total_HP,
+                'QR_codes_scanned': profile_QR_scanned,
             }
 
             localStorage.setItem("profile", JSON.stringify(current_profile));

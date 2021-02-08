@@ -24,6 +24,8 @@ function createNewProfile(){
         'level': 0,
         'HP': 0,
         'level_HP': 0, //this value is for levelling, on 5000 total HP earned, level goes up by one and value resets
+        'total_HP_earned': 0, //this is for stat tracking
+        'QR_codes_scanned': 0, //used for stat tracking
     };
 
     var ref = database.ref('profiles')
