@@ -16,7 +16,21 @@ function setUp(){
 
 }
 
-setUp()
+function enterStatData(){
+
+    var set_AP_earned = document.getElementById('table_ap_earned')
+    var set_codes_scanned = document.getElementById('table_codes_scanned')
+
+    set_AP_earned.innerHTML = profile_data['total_HP_earned']
+    set_codes_scanned.innerHTML = profile_data['QR_codes_scanned']
+    
+
+}
+
+
+
+setUp();
+enterStatData();
 
 $('#navBar_5_2').click(function(){
     window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
