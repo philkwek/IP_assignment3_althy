@@ -22,6 +22,7 @@ function gotProfileData(data){
         profile_username = retrieved_profiles[k].username;
         profile_level = retrieved_profiles[k].level;
         profile_hp = retrieved_profiles[k].HP;
+        profile_level_hp = retrieveved_profiles[k].level_hp;
 
         console.log(profile_username,profile_level,profile_hp)
 
@@ -32,6 +33,7 @@ function gotProfileData(data){
                 'username': profile_username,
                 'level': profile_level,
                 'HP':profile_hp,
+                'level_HP': profile_level_hp,
             }
 
             localStorage.setItem("profile", JSON.stringify(current_profile));
