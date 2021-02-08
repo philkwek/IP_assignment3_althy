@@ -23,6 +23,7 @@ function createNewProfile(){
         'username': username,
         'level': 0,
         'HP': 0,
+        'level_HP': 0, //this value is for levelling, on 5000 total HP earned, level goes up by one and value resets
     };
 
     var ref = database.ref('profiles')
