@@ -24,6 +24,58 @@ function enterStatData(){
     set_AP_earned.innerHTML = profile_data['total_HP_earned']
     set_codes_scanned.innerHTML = profile_data['QR_codes_scanned']
 
+    var friend_1 = document.getElementById('friend_1');
+    var friend_2 = document.getElementById('friend_2');
+    var friend_3 = document.getElementById('friend_3');
+    var friend_4 = document.getElementById('friend_4');
+    var friend_5 = document.getElementById('friend_5');
+
+    getFriendList()
+
+    firebase.database().ref('friend_list/'+profile_data['username']).on('value',function(snapshot){
+        current_friend_list = snapshot.val().list;
+    })
+
+    setTimeout(function(){
+
+        $('#profile_loading').hide()
+        console.log(current_friend_list)
+
+        if (typeof current_friend_list[1] != "undefined"){
+            friend_1.innerHTML = current_friend_list[1]
+            $('#friends_list_name_1').show();
+        }
+
+        if (typeof current_friend_list[2] != "undefined"){
+            friend_1.innerHTML = current_friend_list[2]
+            $('#friends_list_name_2').show();
+        }
+
+        if (typeof current_friend_list[3] != "undefined"){
+            friend_1.innerHTML = current_friend_list[3]
+            $('#friends_list_name_3').show();
+        }
+
+        if (typeof current_friend_list[4] != "undefined"){
+            friend_1.innerHTML = current_friend_list[4]
+            $('#friends_list_name_4').show();
+        }
+
+        if (typeof current_friend_list[5] != "undefined"){
+            friend_1.innerHTML = current_friend_list[5]
+            $('#friends_list_name_5').show();
+        }
+        
+    }, 3000)
+    
+
+}
+
+function getFriendList(){
+
+    firebase.database().ref('friend_list/'+profile_data['username']).on('value',function(snapshot){
+        current_friend_list = snapshot.val().list;
+    })
 
 }
 
@@ -37,12 +89,16 @@ function addFriend(){
 
 function gotData(data){
 
+    var name_exists = false
+
     var friend_name = document.getElementById('friend_name').value;
+
     console.log(friend_name)
     
     if (friend_name == profile_data['username']) { //informs user if they are trying to add themselves
         console.log('Cannot add yourself!');
     }
+    
 
     var retrieved_details = data.val();
     var keys = Object.keys(retrieved_details); //array with all possible usernames
@@ -57,31 +113,36 @@ function gotData(data){
 
             console.log('friend found! adding friend...')
 
-            firebase.database().ref('friend_list/'+profile_data['username']).on('value',function(snapshot){
-                current_friend_list = snapshot.val().list;
-            })
+            getFriendList();
 
-            console.log(current_friend_list)
+            current_friend_list.push(friend_name);
 
-            current_friend_list.push(friend_name)
+            name_exists = true;
 
-            name_exists = true
-
+            break
         } 
     }
 
     if (name_exists == true){
-        firebase.database().ref('friend_list/'+profile_data['username']).update({
-            'list': current_friend_list,
-        })
+        
+        console.log("end");
+        name_exists = false;
+
     }
 
 }
 
 
+function updateDatabase(){
 
-setUp();
-enterStatData();
+    console.log(typeof current_friend_list)
+    console.log(current_friend_list)
+
+
+    firebase.database().ref('friend_list/'+profile_data['username']).update({
+        'list': current_friend_list,
+    })
+}
 
 $('#navBar_5_2').click(function(){
     window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
@@ -111,9 +172,21 @@ $('#friend_add').click(function(){ //add friend toggle to show/hide search
     
 })
 
-$('#profile_add_friend').click(function(){
-    
+
+$('#profile_add_friend').click(function(e){
+
+    e.preventDefault();
     addFriend();
+    
+
+    setTimeout(function(){
+        updateDatabase();
+        document.getElementById('friend_search').reset()
+        $('#friend_search').hide();
+        alert('Friend Added!')
+    },5000)
     
 })
 
+setUp();
+enterStatData();

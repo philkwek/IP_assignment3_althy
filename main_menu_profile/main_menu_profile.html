@@ -94,19 +94,24 @@
                     <h2 class = "body_function_header">Friends</h2>
                 </div>
 
+                <div class = 'col' id = 'profile_loading' align = center>
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_aqgmwvst.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                </div>
+
                 <div class = 'col-sm-12' id='friends_list' align=left>
-                    <h5 class = 'friends_list_name'>@<span id='friend_1'></span></h5>
-                    <h5 class = 'friends_list_name'>@<span id='friend_2'></span></h5>
-                    <h5 class = 'friends_list_name'>@<span id='friend_3'></span></h5>
-                    <h5 class = 'friends_list_name'>@<span id='friend_4'></span></h5>
-                    <h5 class = 'friends_list_name'>@<span id='friend_5'></span></h5>
+                    <h5 id = 'friends_list_name_1'>@<span id='friend_1'></span></h5>
+                    <h5 id = 'friends_list_name_2'>@<span id='friend_2'></span></h5>
+                    <h5 id = 'friends_list_name_3'>@<span id='friend_3'></span></h5>
+                    <h5 id = 'friends_list_name_4'>@<span id='friend_4'></span></h5>
+                    <h5 id = 'friends_list_name_5'>@<span id='friend_5'></span></h5>
                     <h5 class = 'friends_list_name' id='friend_add'>+ Add Friend</h5>
                     
-                    <div class = 'friend_search' id = 'friend_search' align=center>
+                    <form class = 'friend_search' id = 'friend_search' align=center>
                         <label for = 'friend_name'>Friend's username</label></br>
                         <input type = 'text' id = 'friend_name'></br>
                         <button id = "profile_add_friend">Add Friend</button>
-                    </div>
+                    </form>
                     
                 </div>
 

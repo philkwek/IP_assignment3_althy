@@ -858,7 +858,6 @@ body{
 #friends_list{
     margin: 1rem;
     margin-top: 10px;
-    
 }
 
 .friends_list_name{
@@ -867,6 +866,49 @@ body{
     font-weight: 400;
     font-size: 24px;
 }
+
+
+
+#friends_list_name_1{
+    color: #354B64;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 24px;
+    display:none;
+}
+
+#friends_list_name_2{
+    color: #354B64;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 24px;
+    display:none;
+}
+
+#friends_list_name_3{
+    color: #354B64;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 24px;
+    display:none;
+}
+
+#friends_list_name_4{
+    color: #354B64;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 24px;
+    display:none;
+}
+
+#friends_list_name_5{
+    color: #354B64;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 24px;
+    display:none;
+}
+
 
 .friend.back_arrow{
     z-index: 2;
@@ -922,3 +964,10 @@ body{
     background-color: #748394;
 }
 
+#profile_loading{
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    left: 5.4%;
+    top: 45%;
+}
