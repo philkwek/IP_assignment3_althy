@@ -31,6 +31,9 @@ $('#navBar_4_3').click(function(){
     window.location  = '../main_menu_nearby/main_menu_nearby.html'
 });
 
+$('#navBar_4_5').click(function(){
+    window.location = '../main_menu_profile/main_menu_profile.html'
+})
 
 $('#product_1').click(function(){
 

@@ -86,3 +86,7 @@ $('#navBar_3_4').click(function(){
     window.location = '../main_menu_shop/main_menu_shop.html'
 })
 
+$('#navBar_3_5').click(function(){
+  window.location = '../main_menu_profile/main_menu_profile.html'
+})
+
