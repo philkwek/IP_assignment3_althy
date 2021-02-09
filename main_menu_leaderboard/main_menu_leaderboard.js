@@ -36,6 +36,9 @@ function updateProfile(data){
         profile_username = retrieved_profiles[k].username;
         profile_level = retrieved_profiles[k].level;
         profile_hp = retrieved_profiles[k].HP;
+        profile_level_hp = retrieved_profiles[k].level_HP;
+        profile_total_hp_earned = retrieved_profiles[k].total_HP_earned;
+
 
         console.log(profile_username,profile_level,profile_hp)
 
@@ -46,6 +49,9 @@ function updateProfile(data){
                 'username': profile_username,
                 'level': profile_level,
                 'HP':profile_hp,
+                'level_HP': profile_level_hp,
+                'total_HP_earned': profile_total_HP,
+                'QR_codes_scanned': profile_QR_scanned,
             }
 
             localStorage.setItem("profile", JSON.stringify(current_profile));

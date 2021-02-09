@@ -118,7 +118,7 @@ function errData(err){
 function openApp(){
     setTimeout(function(){
         window.location = "../main_menu_scan/main_menu_scan.html"
-    }, 3000)
+    }, 5000)
     console.log('loading...')
 }
 
