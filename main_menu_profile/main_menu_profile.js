@@ -47,22 +47,22 @@ function enterStatData(){
         }
 
         if (typeof current_friend_list[2] != "undefined"){
-            friend_1.innerHTML = current_friend_list[2]
+            friend_2.innerHTML = current_friend_list[2]
             $('#friends_list_name_2').show();
         }
 
         if (typeof current_friend_list[3] != "undefined"){
-            friend_1.innerHTML = current_friend_list[3]
+            friend_3.innerHTML = current_friend_list[3]
             $('#friends_list_name_3').show();
         }
 
         if (typeof current_friend_list[4] != "undefined"){
-            friend_1.innerHTML = current_friend_list[4]
+            friend_4.innerHTML = current_friend_list[4]
             $('#friends_list_name_4').show();
         }
 
         if (typeof current_friend_list[5] != "undefined"){
-            friend_1.innerHTML = current_friend_list[5]
+            friend_5.innerHTML = current_friend_list[5]
             $('#friends_list_name_5').show();
         }
         
