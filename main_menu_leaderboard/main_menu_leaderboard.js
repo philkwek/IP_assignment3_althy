@@ -38,9 +38,7 @@ function updateProfile(data){
         profile_hp = retrieved_profiles[k].HP;
         profile_level_hp = retrieved_profiles[k].level_HP;
         profile_total_hp_earned = retrieved_profiles[k].total_HP_earned;
-
-
-        console.log(profile_username,profile_level,profile_hp)
+        profile_QR_scanned = retrieved_profiles[k].QR_codes_scanned
 
         if (profile_username == profile_data['username']){
             console.log('Found profile')
@@ -50,7 +48,7 @@ function updateProfile(data){
                 'level': profile_level,
                 'HP':profile_hp,
                 'level_HP': profile_level_hp,
-                'total_HP_earned': profile_total_HP,
+                'total_HP_earned': profile_total_hp_earned,
                 'QR_codes_scanned': profile_QR_scanned,
             }
 
