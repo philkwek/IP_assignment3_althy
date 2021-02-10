@@ -36,10 +36,14 @@ function enterStatData(){
         current_friend_list = snapshot.val().list;
     })
 
+    
+
     setTimeout(function(){
 
         $('#profile_loading').hide()
         console.log(current_friend_list)
+
+        localStorage.setItem('friend_list', JSON.stringify(current_friend_list))
 
         if (typeof current_friend_list[1] != "undefined"){
             friend_1.innerHTML = current_friend_list[1]
@@ -132,7 +136,6 @@ function gotData(data){
 
 }
 
-
 function updateDatabase(){
 
     console.log(typeof current_friend_list)
@@ -142,6 +145,10 @@ function updateDatabase(){
     firebase.database().ref('friend_list/'+profile_data['username']).update({
         'list': current_friend_list,
     })
+}
+
+function get_localStorage_friends(){
+    stored_names = JSON.parse(localStorage.getItem('friend_list'))
 }
 
 $('#navBar_5_2').click(function(){
@@ -159,6 +166,58 @@ $('#navBar_5_4').click(function(){
 $('#navBar_5_1').click(function(){
     window.location = '../main_menu_scan/main_menu_scan.html'
 })
+
+
+$('#friends_list_name_1').click(function(){
+    get_localStorage_friends();
+
+    var view_friend_profile = stored_names[1]
+    
+    localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
+
+    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+})
+
+$('#friends_list_name_2').click(function(){
+    get_localStorage_friends();
+
+    var view_friend_profile = stored_names[2]
+    
+    localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
+
+    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+})
+
+$('#friends_list_name_3').click(function(){
+    get_localStorage_friends();
+
+    var view_friend_profile = stored_names[3]
+    
+    localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
+
+    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+})
+
+$('#friends_list_name_4').click(function(){
+    get_localStorage_friends();
+
+    var view_friend_profile = stored_names[4]
+    
+    localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
+
+    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+})
+
+$('#friends_list_name_5').click(function(){
+    get_localStorage_friends();
+
+    var view_friend_profile = stored_names[5]
+    
+    localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
+
+    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+})
+
 
 $('#friend_add').click(function(){ //add friend toggle to show/hide search
 
