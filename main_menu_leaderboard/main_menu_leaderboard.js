@@ -153,15 +153,23 @@ setUp();
 leaderboard_setup();
 retrieveProfiles();
 
-$('#navBar_2_1').click(function(){
-    window.location  = '../main_menu_scan/main_menu_scan.html'
-});
+$('#trophy_2').click(function(){
+    location.reload()
+})
 
-$('#navBar_2_3').click(function(){
-    window.location  = '../main_menu_nearby/main_menu_nearby.html'
-});
+$('#location_2').click(function(){
+    window.location = '../main_menu_nearby/main_menu_nearby.html'
+})
 
-$('#navBar_2_4').click(function(){
+$('#shop_2').click(function(){
     window.location = '../main_menu_shop/main_menu_shop.html'
+})
+
+$('#profile_2').click(function(){
+    window.location = '../main_menu_profile/main_menu_profile.html'
+})
+
+$('#scan_2').click(function(){
+    window.location = '../main_menu_scan/main_menu_scan.html'
 })
 

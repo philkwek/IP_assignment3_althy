@@ -30,19 +30,23 @@ function setUp(){
 setUp()
 
 
-$('#navBar_1_2').click(function(){
+$('#trophy_1').click(function(){
     window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
 })
 
-$('#navBar_1_3').click(function(){
+$('#location_1').click(function(){
     window.location = '../main_menu_nearby/main_menu_nearby.html'
 })
 
-$('#navBar_1_4').click(function(){
+$('#shop_1').click(function(){
     window.location = '../main_menu_shop/main_menu_shop.html'
 })
 
-$('#navBar_1_5').click(function(){
+$('#profile_1').click(function(){
     window.location = '../main_menu_profile/main_menu_profile.html'
+})
+
+$('#scan_1').click(function(){
+    location.reload()
 })
 

@@ -64,18 +64,6 @@
     
     <body>
 
-        <div class = "container">
-            <div class = "header_navigation_bar row" id = "navigation_bar">
-
-                <div class = "col" id = "navBar_3_1"></div>
-                <div class = "col" id = "navBar_3_2"></div>
-                <div class = "col" id = "navBar_3_3"></div>
-                <div class = "col" id = "navBar_3_4"></div>
-                <div class = "col" id = "navBar_3_5"></div>
-
-            </div>
-        </div>
-
         <div class="container">
 
             <div class = 'row'>
@@ -94,23 +82,49 @@
 
         
 
-        <div class = 'container'>
+        <div class = 'container' align = center>
             
             <div class = 'row'>
                 <div class = 'col-sm-12' id = 'map'>
 
                 </div>
-                <div class = 'col' id = 'nearby_loading' align = center>
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_aqgmwvst.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-                </div>
+            </div>
+        </div>
+
+        <div class="container" id = "nearby_loading" align=center>
+            <div class="col-sm-12">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_aqgmwvst.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
             </div>
         </div>
         
+        <div class = 'container' id = 'bottom_navigation_bar' align=center>
+            <div class = 'row'>
 
+                <div class = 'col'>
+                    <img id = 'scan_3' src='../assets/images/bottom_nav_bar/scan.svg'>
+                </div>
+
+                <div class = 'col'>
+                    <img id = 'trophy_3' src='../assets/images/bottom_nav_bar/trophy.svg'>
+                </div>
+
+                <div class = 'col'>
+                    <img id = 'location_3' src='../assets/images/bottom_nav_bar/location_selected.svg'>
+                </div>
+
+                <div class = 'col'>
+                    <img id = 'shop_3' src='../assets/images/bottom_nav_bar/shop.svg'>
+                </div>
+
+                <div class = 'col'>
+                    <img id = 'profile_3' src='../assets/images/bottom_nav_bar/profile.svg'>
+                </div>
+                            
+            </div>
+        </div>
 
     
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

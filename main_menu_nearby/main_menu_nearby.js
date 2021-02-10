@@ -74,19 +74,23 @@ function error(err){
 getLocation();
 setUp();
 
-$('#navBar_3_1').click(function(){
-    window.location  = '../main_menu_scan/main_menu_scan.html'
-});
-
-$('#navBar_3_2').click(function(){
-    window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
+$('#trophy_3').click(function(){
+  window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
 })
 
-$('#navBar_3_4').click(function(){
-    window.location = '../main_menu_shop/main_menu_shop.html'
+$('#location_3').click(function(){
+  location.reload()
 })
 
-$('#navBar_3_5').click(function(){
+$('#shop_3').click(function(){
+  window.location = '../main_menu_shop/main_menu_shop.html'
+})
+
+$('#profile_3').click(function(){
   window.location = '../main_menu_profile/main_menu_profile.html'
+})
+
+$('#scan_3').click(function(){
+  window.location = '../main_menu_nearby/main_menu_nearby.html'
 })
 

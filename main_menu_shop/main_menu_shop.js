@@ -19,21 +19,27 @@ function setUp(){
 
 setUp();
 
-$('#navBar_4_1').click(function(){
-    window.location  = '../main_menu_scan/main_menu_scan.html'
-});
-
-$('#navBar_4_2').click(function(){
+$('#trophy_4').click(function(){
     window.location  = '../main_menu_leaderboard/main_menu_leaderboard.html'
-});
+})
 
-$('#navBar_4_3').click(function(){
-    window.location  = '../main_menu_nearby/main_menu_nearby.html'
-});
+$('#location_4').click(function(){
+    window.location = '../main_menu_nearby/main_menu_nearby.html'
+})
 
-$('#navBar_4_5').click(function(){
+$('#shop_4').click(function(){
+    location.reload()
+})
+
+$('#profile_4').click(function(){
     window.location = '../main_menu_profile/main_menu_profile.html'
 })
+
+$('#scan_4').click(function(){
+    window.location = '../main_menu_scan/main_menu_scan.html'
+})
+
+
 
 $('#product_1').click(function(){
 
