@@ -79,6 +79,9 @@ function leaderboard_setup(){
         username.reverse()
         console.log(username, HP)
 
+        $('#leaderboard').show();
+        $('#leaderboard_loading').hide();
+
         // 
         if (typeof HP[0] !== 'undefined'){
             var first = HP[0];

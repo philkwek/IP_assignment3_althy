@@ -366,6 +366,8 @@ body{
 
 
 
+
+
 .leaderboard_1{
     font-family: 'Roboto', sans-serif;
     
@@ -391,7 +393,9 @@ body{
 
 }
 
-
+#leaderboard{
+    display: none;
+}
 
 #body_leaderboard_extras{
     position:relative;
