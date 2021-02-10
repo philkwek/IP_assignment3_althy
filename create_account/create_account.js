@@ -25,7 +25,6 @@ function createFriendList(){
         'list': [''],
     })
 
-
 }
 
 function createNewProfile(){
@@ -48,8 +47,6 @@ function createNewProfile(){
 
 $('#create_account_click_continue').click(function(){
     getNewAccount_details();
-    console.log(username);
-    console.log(password);
     uploadAccountData();
     createNewProfile();
     createFriendList();
