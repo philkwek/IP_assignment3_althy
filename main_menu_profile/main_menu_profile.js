@@ -34,11 +34,6 @@ function enterStatData(){
 
     firebase.database().ref('friend_list/'+profile_data['username']).on('value',function(snapshot){
         current_friend_list = snapshot.val().list;
-    })
-
-    
-
-    setTimeout(function(){
 
         $('#profile_loading').hide()
         console.log(current_friend_list)
@@ -69,9 +64,7 @@ function enterStatData(){
             friend_5.innerHTML = current_friend_list[5]
             $('#friends_list_name_5').show();
         }
-        
-    }, 3000)
-    
+    })
 
 }
 
@@ -175,7 +168,7 @@ $('#friends_list_name_1').click(function(){
     
     localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
 
-    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+    window.location = '../main_menu_profile/friends_profile/friends_profile.html'
 })
 
 $('#friends_list_name_2').click(function(){
@@ -185,7 +178,7 @@ $('#friends_list_name_2').click(function(){
     
     localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
 
-    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+    window.location = '../main_menu_profile/friends_profile/friends_profile.html'
 })
 
 $('#friends_list_name_3').click(function(){
@@ -195,7 +188,7 @@ $('#friends_list_name_3').click(function(){
     
     localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
 
-    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+    window.location = '../main_menu_profile/friends_profile/friends_profile.html'
 })
 
 $('#friends_list_name_4').click(function(){
@@ -205,7 +198,7 @@ $('#friends_list_name_4').click(function(){
     
     localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
 
-    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+    window.location = '../main_menu_profile/friends_profile/friends_profile.html'
 })
 
 $('#friends_list_name_5').click(function(){
@@ -215,7 +208,7 @@ $('#friends_list_name_5').click(function(){
     
     localStorage.setItem('view_friend_profile', JSON.stringify(view_friend_profile))
 
-    //window.location = '../main_menu_profile/friends_profile/friends_profile.html
+    window.location = '../main_menu_profile/friends_profile/friends_profile.html'
 })
 
 
