@@ -36,6 +36,7 @@ function enterStatData(){
         current_friend_list = snapshot.val().list;
 
         $('#profile_loading').hide()
+        $('#friend_add').show()
         console.log(current_friend_list)
 
         localStorage.setItem('friend_list', JSON.stringify(current_friend_list))

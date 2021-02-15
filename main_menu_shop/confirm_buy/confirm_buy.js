@@ -95,6 +95,9 @@ function gotProfileData(data){
         profile_username = retrieved_profiles[k].username;
         profile_level = retrieved_profiles[k].level;
         profile_hp = retrieved_profiles[k].HP;
+        profile_level_hp = retrieved_profiles[k].level_hp;
+        profile_total_HP = retrieved_profiles[k].total_HP_earned;
+        profile_QR_scanned = retrieved_profiles[k].QR_codes_scanned;
 
         console.log(profile_username,profile_level,profile_hp)
 
@@ -105,6 +108,9 @@ function gotProfileData(data){
                 'username': profile_username,
                 'level': profile_level,
                 'HP':profile_hp,
+                'level_HP': profile_level_hp,
+                'total_HP_earned': profile_total_HP,
+                'QR_codes_scanned': profile_QR_scanned,
                 'key': keys[i]
             }
 
@@ -128,6 +134,9 @@ function updateAP(){
         'username': current_profile['username'],
         'level': current_profile['level'],
         'HP': remaining_balance['remaining_balance'],
+        'level_HP': current_profile['level_hp'],
+        'total_HP_earned': current_profile['total_HP_earned'],
+        'QR_codes_scanned': current_profile['QR_codes_scanned'],
     }
 
     localStorage.setItem("profile", JSON.stringify(update_profile));

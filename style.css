@@ -712,6 +712,18 @@ body{
 
 /* Profile css */
 
+.header_information_friends{
+    display: none;
+}
+
+#friends_header{
+    display: none;
+}
+
+#friend_add{
+    display:none;
+}
+
 #profile_menu_header{
     margin-left:1rem;
     color: #748394;

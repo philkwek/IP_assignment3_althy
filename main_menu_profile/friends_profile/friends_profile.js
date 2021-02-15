@@ -91,6 +91,12 @@ function setFriendData(){ //this sets the friend profile data into the HTML
     set_AP_earned.innerHTML = friend_profile['total_HP_earned']
     set_codes_scanned.innerHTML = friend_profile['QR_codes_scanned']
 
+    var x = document.getElementsByClassName('header_information_friends')
+    x[0].style.display = 'block'
+    x[1].style.display = 'block'
+
+    $('#friends_header').show()
+
 }
 
 function setFriend_friendList(){
