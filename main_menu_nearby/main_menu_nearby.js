@@ -91,6 +91,6 @@ $('#profile_3').click(function(){
 })
 
 $('#scan_3').click(function(){
-  window.location = '../main_menu_nearby/main_menu_nearby.html'
+  window.location = '../main_menu_nearby/main_menu_scan.html'
 })
 
