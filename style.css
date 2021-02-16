@@ -22,7 +22,7 @@ body{
 
 #welcome_title_login{
     position: relative;
-    top: 10px;
+    top: 80px;
     text-align:left;
     white-space: normal;
     font-size: 59px;
@@ -34,15 +34,15 @@ body{
 #apple_icon{
     transform: rotate(20deg);
     position:relative;
+    top: 50px;
     left:167px;
-    top:100px;
     width:154px;
 }
 
 .login_button{
     position:relative;
     align-items:center;
-    top:200px;
+    top:250px;
 }
 
 #create_account{
