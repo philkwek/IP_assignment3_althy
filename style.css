@@ -386,21 +386,24 @@ body{
 }
 
 
-
 .leaderboard_1{
     font-family: 'Roboto', sans-serif;
+    text-align: center;
     
 }
+
 
 .leaderboard_2{
     
     font-family:'Roboto', sans-serif;
     position: relative;
-    top: 60px;
+    top: 40px;
     left: 10px;
-    
 
 }
+
+
+
 
 .leaderboard_3{
     
@@ -412,11 +415,9 @@ body{
 
 }
 
+
 .medal{
-    width: 120px;
-    position: relative;
-    right: 17px;
-    top: 16px;
+    width: 100px;
 }
 
 
