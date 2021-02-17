@@ -380,7 +380,10 @@ body{
     margin: 5px;
 }
 
-
+#body_leaderboard{
+    position: relative;
+    bottom: 40px;
+}
 
 
 
@@ -409,13 +412,16 @@ body{
 
 }
 
-#leaderboard{
-    display: none;
+.medal{
+    width: 120px;
+    position: relative;
+    right: 17px;
+    top: 16px;
 }
 
-#body_leaderboard_extras{
-    position:relative;
-    top:60px;
+
+#leaderboard{
+    display: none;
 }
 
 #leaderboard_position_1{
