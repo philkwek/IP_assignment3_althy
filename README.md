@@ -22,22 +22,49 @@ For our project, our aim is to create an app to better encourage users to build 
 
 6. As a user, I want to be able to check location of nearby eateries, so that I can easily find new places to eat.
 
-### Features to be added 
+### Main Completed Features
 
-- A introductory splashscreen for first-time users
-- QR Code Scanner that scans to earn Health Points
-- A Shop with rewards such as Avatar Profile Pictures, Items and even Vouchers
-- Global Leaderboards that track the total amount of HP earned
-- Add friend feature that will allow you to also see their stats
-- Map feature that displays locations of whatever was filtered (eg Hawkers, Cafes and Restaurants)
+- QR Code Scanner that scans QR codes that adds points to User's account
+
+- Leaderboard function that displays top 6 players in terms of points earned
+
+- Nearby map function that displays user's current location and nearby restaurants/eateries/cafes
+
+- Shop function where users can purchase items with it being able to send orders to a database
+
+- Profile function that allows user to see stats such as Lifetime points earned and total number of QR codes scanned
+
+- Add friends functions with the ability to check friend stats
+
+
+### Features to be added in the future
+
+- Avatars. 
+
+- A tutorial to teach lost users how to use the app.
+
 
 ## Overall App Structure
 
-### a. Overview
+### Overview
 
 This app will be split into 5 main sections with all sections having a common header, the header being the user's own level, name and amount of Health Points the User has. The 5 main sections consist of the QR Code Scanner, Leaderboard, Nearby Map, Shop and lastly the Profile.
 
-### b. Wireframes
+## Testing done on App
+
+### Core Features
+
+[x]Scan QR Code Function and opens up Page correctly
+
+[x]Leaderboard shows top 6 players and their corresponding points correctly in the right order
+
+[x]Nearby Page shows user's current location and nearby restaurants/eateries/cafes
+
+[x]Shop page displays products correctly and purchase process works as intended
+
+[x]Profile shows User's stats correctly (such as lifetime AP earned and QR Codes scanned)
+
+[x]Add friends function working as intended with correct friends added shown on profile page under 'friends'
 
 ---
 
@@ -55,6 +82,8 @@ This app will be split into 5 main sections with all sections having a common he
 - Google Maps & Locations API
 - QR Code JS Library
 
-## Testing
+
 
 ## Acknowledgements
+
+- W3 Schools for many tutorials and help
