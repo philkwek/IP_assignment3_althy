@@ -61,7 +61,9 @@ function updateHP(){
     var hp = current_profile['HP'];
     var lifetime_hp = current_profile['total_HP_earned'];
     var leveling_hp = current_profile['level_HP'];
+    var qr_codes_scanned = current_profile['QR_codes_scanned']
 
+    qr_codes_scanned = qr_codes_scanned + 1;
     leveling_hp = leveling_hp + 500;
     lifetime_hp = lifetime_hp + 500;
     hp = hp + 500;
@@ -82,7 +84,7 @@ function updateHP(){
         'HP':hp,
         'level_HP': leveling_hp,
         'total_HP_earned': lifetime_hp,
-        'QR_codes_scanned': current_profile['QR_codes_scanned'],
+        'QR_codes_scanned': qr_codes_scanned,
         'key': current_profile['key']
     }
     
