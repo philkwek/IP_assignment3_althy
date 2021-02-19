@@ -22,7 +22,7 @@ function gotProfileData(data){
         profile_username = retrieved_profiles[k].username;
         profile_level = retrieved_profiles[k].level;
         profile_hp = retrieved_profiles[k].HP;
-        profile_level_hp = retrieved_profiles[k].level_hp;
+        profile_level_hp = retrieved_profiles[k].level_HP;
         profile_total_HP = retrieved_profiles[k].total_HP_earned;
         profile_QR_scanned = retrieved_profiles[k].QR_codes_scanned;
 
