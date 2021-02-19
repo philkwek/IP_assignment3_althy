@@ -26,7 +26,7 @@ function gotProfileData(data){
         profile_total_HP = retrieved_profiles[k].total_HP_earned;
         profile_QR_scanned = retrieved_profiles[k].QR_codes_scanned;
 
-        console.log(profile_username,profile_level,profile_hp)
+        console.log(profile_username,profile_level,profile_hp, retrieved_profiles[k].level_HP)
 
         if (profile_username == entered_username){ //if matches, it stores corresponding profile data for current session
             console.log('Found profile')
