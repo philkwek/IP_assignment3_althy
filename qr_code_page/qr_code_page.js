@@ -69,6 +69,7 @@ function updateHP(){
     if (leveling_hp >= 5000) { //this levels the user up
         leveling_hp = 0
         var new_level = current_profile['level'] + 1
+        leveling_hp = 0
         level_up = true
     } else {
         var new_level = current_profile['level']
