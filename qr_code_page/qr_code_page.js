@@ -118,7 +118,9 @@ function start(){
 
         updateHP();
 
-        if (level_up = true){
+        console.log(level_up)
+
+        if (level_up == true){
             alert('You earned 500 points and leveled up!')
         } else {
             alert('You earned 500 points!')
